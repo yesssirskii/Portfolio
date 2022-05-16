@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+/*GENERAL*/
+
+html, body
+{
+    margin: auto 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/*NAVBAR*/
+
+#navbar-list{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#skills{
+    font-size: 20px;
+}
+
+a:hover{
+    transition: 0.3s;
+    color:#D72F2F;
+    transform: scale(1.5);
+}
+
+.navbar-effect{
+    transition: 0.3s;
+}
+
+.navbar-effect:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+  
+.active {
+    color:#D72F2F;
+}
+
+.fa-bars::before{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/*SPLASH page*/
+
+.intro-wrapper
+{
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.left-side
+{
+    background-color: #D72F2F;
+    color: #212121;
+    text-align: right;
+    width: 100%;
+}
+
+.right-side
+{
+    background-color: #212121;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+#ivan, #matejcic, #cs, #student{
+    margin-top: 300px;
+}
+
+/*ABOUT ME page*/
+
+.about-me
+{
+    background-color: #212121;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about-me-title
+{
+    color: white;
+    padding: 15px;
+    text-align: -webkit-center;
+    margin: 100px 20%;
+}
+
+.opis
+{
+    color: white;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.about-me-div
+{
+    grid-template-rows: 50% 50%;
+}
+
+.slika
+{
+    justify-content: center;
+    transition: 0.2s;
+    margin: 30%;
+}
+
+.slika:hover
+{
+    transform: scale(1.3);
+}
+
+img{
+    border-radius: .375rem;
+    width: 100%;
+    height: auto;
+}
+
+.social{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fa{
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+/* PROJECTS sub-page*/
+
+.projects-container{
+    background-color: #212121;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.projects{
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+}
+
+#project-image{
+    height: 100%;
+    width: 100%;
+}
+
+#project-image2{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.project-text-wrapper{
+    grid-template-columns: 100%;
+    padding: 0 45px 0 45px;
+}
+
+#project-heading{
+    text-align: left;
+    vertical-align: top;
+    color: white;
+}
+
+#project-description{
+    text-align: left;
+    color: white;
+}
+
+#project-description-smaller{
+    font-size: 17px;
+    color: white;
+}
+
+#release-date{
+    font-size: 15px;
+    color: white;
+}
+
+#github-link1{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -20px 0 0;
+}
+
+#github-link2{
+    color: white;;
+    display: flex;
+    justify-content: flex-end;
+    margin: 70px -20px 0 0;
+}
+
+#github-link3{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px -20px 0 0;
+}
+
+#github-link4{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin: -10px -20px 0 0;
+}
+
+#github-link1:hover, #github-link2:hover, #github-link3:hover, #github-link4:hover{
+    transition: 0.3s;
+    color:#D72F2F;
+    transform: none;
+}
+  
+/* Animacija teksta */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 800px) {
+    body{
+        flex-direction: column;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .about-me{
+        grid-template-columns: 100%;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    p, li{
+        font-size: 15px;
+    }
+
+    #project-description-smaller{
+        font-size: 14px;
+    }
+
+    .about-me-title{
+        padding: 10px;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #project-image2{
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .about-me-title{
+        padding: 5px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    #navbar-list{
+        display: none;
+        position: absolute;
+    }
+
+    .fa-bars::before{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1900px)
+{
+    .about-me{
+        grid-template-columns: 100%;
+    }
+    .projects-container{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px)
+{
+
+    #github-link1, #github-link2, #github-link3, #github-link4{
+        margin: 72px -20px 26px 0;
+    }
+
+    
+}
