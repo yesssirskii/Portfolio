@@ -1,5 +1,6 @@
 function myFunction() {
   var x = document.getElementById("navbar-list");
+  
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

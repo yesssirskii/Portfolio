@@ -93,14 +93,14 @@ a:hover{
 .left-side
 {
     background-color: #D72F2F;
-    color: #212121;
+    color: #111;
     text-align: right;
     width: 100%;
 }
 
 .right-side
 {
-    background-color: #212121;
+    background-color: #111;
     color: white;
     width: 100%;
     text-align: left;
@@ -110,11 +110,15 @@ a:hover{
     margin-top: 300px;
 }
 
+#ivan, #matejcic{
+    font-family: Ivan Matejcic;
+}
+
 /*ABOUT ME page*/
 
 .about-me
 {
-    background-color: #212121;
+    background-color: #111;
     width: 100%;
     display: inline-grid;
     grid-template-columns: 50% 50%;
@@ -176,7 +180,7 @@ img{
 /* PROJECTS sub-page*/
 
 .projects-container{
-    background-color: #212121;
+    background-color: #111;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -186,12 +190,11 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #303030;
-    background: rgba(255, 255, 255, 0.11);
+    background: rgba(63, 63, 63, 0.35);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.6px);
-    -webkit-backdrop-filter: blur(5.6px);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(10.8px);
 }
 
 #project-image{
@@ -393,7 +396,12 @@ img{
 
     #github-link1, #github-link2, #github-link3, #github-link4{
         margin: 72px -20px 26px 0;
-    }
+    }    
+}
 
-    
+/* MY FONT*/
+
+@font-face {
+    font-family: Ivan Matejcic;
+    src: url(../fonts/Ivanmatejcic-Regular.ttf);
 }
