@@ -10,75 +10,88 @@
 </head>
 
 <body>
-    <div class = "container">
-        <div class = "intro-wrapper">
-            <div class = "left-side" >
-                <div class = "animated animatedFadeInUp fadeInUp" id = "ivan">
-                    <h1>Ivan</h1>
-                </div>
-                <div class = "animated animatedFadeInUp fadeInUp" id = "cs">
-                    <h2>CS</h2>
-                </div>
+    <div class = "intro-wrapper">
+        <div class = "left-side" >
+            <div class = "floating" id = "ivan">
+                <h1>Ivan</h1>
             </div>
-            <div class = "right-side">
-                <nav class = "navbar">
-                    <ul id = "navbar-list">
-                        <li class = "navbar-effect"><a class = "active" href = "ePortfolio.html">Home</a></li>
-                        <li class = "navbar-effect"><a  href = "projects.html">My Projects</a></li>
-                        <li class = "navbar-effect"><a href = "Ivan Matejčić_CV.docx">CV</a></li>
-                    </ul>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class = "fa fa-bars"></i>
-                    </a>
-                </nav>
-                <div class = "animated animatedFadeInUp fadeInUp" id = "matejcic">
-                    <h1>Matejčić</h1>
-                </div>
-                <div class = "animated animatedFadeInUp fadeInUp" id = "student">
-                    <h2>STUDENT</h2>
-                </div>
+            <div class = "animated animatedFadeInUp fadeInUp" id = "cs">
+                <h2>CS</h2>
             </div>
         </div>
+        <div class = "right-side">
+            <nav class = "navbar">
+                <ul id = "navbar-list">
+                    <li class = "navbar-effect"><a class = "active" href = "ePortfolio.html">Home</a></li>
+                    <li class = "navbar-effect"><a  href = "projects.html">My Projects</a></li>
+                    <li class = "navbar-effect"><a href = "Ivan Matejčić_CV.docx">CV</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class = "fa fa-bars"></i>
+                </a>
+            </nav>
+            <div class = "floating" id = "matejcic">
+                <h1>Matejčić</h1>
+            </div>
+            <div class = "animated animatedFadeInUp fadeInUp" id = "student">
+                <h2>STUDENT</h2>
+            </div>
+        </div>
+    </div>
 
-        <div class = "about-me">
-            <div class = "about-me-div">
-                <div class = "about-me-title animated animatedFadeInUp fadeInUp" >
-                    <h1>ABOUT ME</h1>
-                </div>
-                <div class = "opis animated animatedFadeInUp fadeInUp">
-                    <p style = "font-size: 30px; font-weight: bold;">Hi! 👋</p><br>
-                    <p style = "line-height: 35px;">My name is Ivan.<br>
-                    I am 21 years old, from Crikvenica, Croatia.<br>
-                    Currently studying computer science at the University of Rijeka, year three.<br>
-                    I enjoy working out, hanging out with friends aswell as watching football and Formula 1!<br><br></p>
-                    <p style = "font-size: 30px; font-weight: bold;">IT skills and knowledge:</p>
-                    <p>
-                        <ul id = "skills">
-                            <li>Programming in C++ & Python,</li><br>
-                            <li>Frontend & backend programming (HTML, CSS, JavaScript & Django),</li><br>
-                            <li>SQL basics,</li><br>
-                            <li>Blender, Adobe Photoshop & Adobe Illustrator basics,</li><br>
-                            <li>Microsoft Office,</li><br>
-                            <li>OS: Windows, Linux (Ubuntu) & MacOS.</li>
-                        </ul>
+    <div class = "about-me">
+        <div class = "about-me-div">
+            <div class = "about-me-title animated animatedFadeInUp fadeInUp" >
+                <h1>ABOUT ME</h1>
+            </div>
+            <div class = "slide-container">
+                <div class = "opis opis-active animated animatedFadeInUp fadeInUp">
+                    <p class = "about-me-title-2">Hi! 👋</p>
+                    <p style = "line-height: 35px;">
+                    My name is Ivan.<br>
+                    I am a 21 year old computer science student.<br>
+                    I live in a small town called Tribalj, which is a 5 minute drive from Crikvenica, Croatia.<br>
+                    In my free time I enjoy being a gym rat, goint to the beach, hanging out with friends, watching Formula 1 races and learning about new things related to IT!<br><br></p>
+                    <p style = "font-size: 25px; font-weight: bold;">Education</p>
+                    <p style = "line-height: 35px;">
+                    In 2019 I graduated from Pazinski kolegij high school, a private school with public rights (2015 - 2019).<br>
+                    Currently, I am studying computer/information science at the University of Rijeka<br> (2019 - present).<br>
+                    I am in my third year of college, chasing that bachelors degree!<br>
                     </p>
                 </div>
-            </div>
-            <div class = "slika">
-                <img class = "animated animatedFadeInUp fadeInUp" src = "img/Ja_2.JPG">
+                <div class = "opis animated animatedFadeInUp fadeInUp">
+                    <p class = "about-me-title-2">IT skills and knowledge:</p>
+                    <p style = "line-height: 35px;">
+                    When it comes to IT, I am knowledgeable in both frontend and backend programming.<br>
+                    I favour frontend programming aswell as styling and designing interfaces.<br><br>
+                    <p style = "font-size: 25px; font-weight: bold;">My skills include:<br></p>
+                    <p style = "line-height: 35px;">
+                    Programming in C++ & Python,<br>
+                    Frontend & backend programming (HTML, CSS, JavaScript & Django),<br>
+                    Unity,<br>
+                    Wordpress,<br>
+                    Microsoft Office,<br>
+                    SQL basics,<br>
+                    Blender, Figma, Adobe Photoshop & Adobe Illustrator basics,<br>
+                    OS: Windows, Linux (Ubuntu) & MacOS.
+                    </p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
         </div>
-
-        <footer style = "background-color: #111;">
-            <div class = "social">
-                <a href = "https://www.facebook.com/matejcicivan1" class = "fa fa-facebook"></a>
-                <a href = "https://twitter.com/__yessirskiii__" class = "fa fa-twitter"></a>
-                <a href = "https://www.linkedin.com/in/ivan-matej%C4%8Di%C4%87-066b1175/" class = "fa fa-linkedin"></a>
-                <a href = "https://www.instagram.com/ivanmatejcic_/" class = "fa fa-instagram"></a>
-            </div>
-            <p style = "background-color: #111; color: white;margin:  0 auto;padding:  30px;text-align: center;align-items: center; font-size: 15px;">@2022 Ivan Matejčić</p>
-        </footer>
-        
+        <div class = "slika">
+            <img class = "animated animatedFadeInUp fadeInUp" src = "img/Ja_2.JPG">
+        </div>
     </div>
+    <footer style = "background-color: #111;">
+        <div class = "social">
+            <a href = "https://www.facebook.com/matejcicivan1" class = "fa fa-facebook"></a>
+            <a href = "https://twitter.com/__yessirskiii__" class = "fa fa-twitter"></a>
+            <a href = "https://www.linkedin.com/in/ivan-matej%C4%8Di%C4%87-066b1175/" class = "fa fa-linkedin"></a>
+            <a href = "https://www.instagram.com/ivanmatejcic_/" class = "fa fa-instagram"></a>
+        </div>
+        <p style = "background-color: #111; color: white;margin:  0 auto;padding:  30px;text-align: center;align-items: center; font-size: 15px;">@2022 Ivan Matejčić</p>
+    </footer>
 </body>
 </html>

@@ -128,8 +128,13 @@ a:hover{
 {
     color: white;
     padding: 15px;
-    text-align: -webkit-center;
-    margin: 100px 20%;
+    text-align: left;
+    margin: 100px 17%;
+}
+
+.about-me-title-2{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .opis
@@ -139,6 +144,11 @@ a:hover{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    display: none;
+}
+
+.opis-active{
+    display: block;
 }
 
 .about-me-div
@@ -150,7 +160,7 @@ a:hover{
 {
     justify-content: center;
     transition: 0.2s;
-    margin: 30%;
+    margin: auto 30%;
 }
 
 .slika:hover
@@ -162,6 +172,40 @@ img{
     border-radius: .375rem;
     width: 100%;
     height: auto;
+}
+
+.slide-container {
+    position: relative;
+    background: #111;
+    margin-left: 50px;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    background: rgba(63, 63, 63, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(10.8px);
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 16px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #D72F2F;
+    color: #111;
 }
 
 .social{
@@ -190,7 +234,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(63, 63, 63, 0.35);
+    background: rgba(63, 63, 63, 0.25);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.8px);
@@ -292,6 +336,12 @@ img{
     }
 }
 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -309,6 +359,14 @@ img{
     -webkit-animation-name: fadeInUp;
 }
 
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 800px) {
@@ -323,8 +381,16 @@ img{
 
 @media screen and (max-width: 1000px)
 {
+    #cs, #student{
+        font-size: 10px;
+    }
+
     .about-me{
         grid-template-columns: 100%;
+    }
+
+    .opis, .about-me-title, #skills, .about-me-title-2{
+        text-align: center;
     }
 
     h1{
@@ -332,7 +398,7 @@ img{
     }
 
     h2{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     p, li{
@@ -379,6 +445,22 @@ img{
     .fa-bars::before{
         display: block;
     }
+
+    .slika{
+        transform: scale(1.3);
+    }
+
+    .opis, .about-me-title, #skills, .about-me-title-2{
+        text-align: center;
+    }
+
+    #project-heading{
+        font-size: 30px;
+    }
+
+    .prev:hover, .next:hover{
+        transform: scale(1.1);
+    }
 }
 
 @media screen and (max-width: 1900px)
@@ -386,16 +468,24 @@ img{
     .about-me{
         grid-template-columns: 100%;
     }
+
+    .slika{
+        margin: 10% 30%;
+    }
+
     .projects-container{
         grid-template-columns: 100%;
+    }
+
+    .slide-container{
+        margin: 0 20px 0 20px;
     }
 }
 
 @media screen and (max-width: 1400px)
 {
-
     #github-link1, #github-link2, #github-link3, #github-link4{
-        margin: 72px -20px 26px 0;
+        margin: 20px -20px 26px 0;
     }    
 }
 
@@ -404,4 +494,11 @@ img{
 @font-face {
     font-family: Ivan Matejcic;
     src: url(../fonts/Ivanmatejcic-Regular.ttf);
+}
+
+@media screen and (min-width: 2000px)
+{
+    .about-me{
+        height: 100vh;
+    }
 }
