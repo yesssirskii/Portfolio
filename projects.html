@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Matejčić - Projects</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href = "css/ePortfolio.css">
+    <script src = "js/ePortfolio.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class = "intro-wrapper">
+        <div class = "left-side" >
+            <div class = "floating" id = "ivan">
+                <h1>Ivan</h1>
+            </div>
+            <div class = "animated animatedFadeInUp fadeInUp" id = "cs">
+                <h2>MY</h2>
+            </div>
+        </div>
+        <div class = "right-side">
+            <nav class = "navbar">
+                <ul id = "navbar-list">
+                    <li class = "navbar-effect"><a href = "index.html">Home</a></li>
+                    <li class = "navbar-effect"><a class = "active" href = "projects.html">My Projects</a></li>
+                    <li class = "navbar-effect"><a href = "Ivan Matejčić_CV.docx">CV</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class = "fa fa-bars"></i>
+                </a>
+            </nav>
+            <div class = "floating" id = "matejcic">
+                <h1>Matejčić</h1>
+            </div>
+            <div class = "animated animatedFadeInUp fadeInUp" id = "student">
+                <h2>PROJECTS</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class = "projects-container">
+        <div class = "projects animated animatedFadeInUp fadeInUp">
+            <div id = "project-image">
+                <img id = "project-image-djat" src = "img/djat_.png">
+            </div>
+            <div class = "project-text-wrapper">
+                <h2 id = "project-heading">Djat</h2>
+                <p id = "project-description">
+                    Django chat application that allows users to sign up, choose a room/channel, as well as send and recieve messaages from other active users.<br></p>
+                <p id = "project-description-smaller">This project was made using Django, JavaScript, HTML & CSS.</p><br>
+                <p id = "release-date">Release date: September 2, 2022.</p>
+                <div>
+                    <a href = "https://github.com/IvanMatejcic/Djat" class="material-icons" id = "github-link1">open_in_new</a>
+                </div>
+            </div>
+        </div>
+        <div class = "projects languide animated animatedFadeInUp fadeInUp">
+            <div class = "projects-image-languide-parent project-image">
+                <img id = "project-image-languide" src = "img/LanGuide_.png">
+            </div>
+            <div class = "project-text-wrapper">
+                <h2 id = "project-heading">LanGuide mobile app</h2>
+                <p id = "project-description">
+                    LanGuide is a mobile service which allows its users to sign up, view all users, results and languages used in courses.<br></p>
+                <p id = "project-description-smaller">This project was made using Xamarin Forms and C# with an Android emulator.</p><br>
+                <p id = "release-date">Release date: September 8, 2022.</p>
+                <div>
+                    <a href = "https://github.com/IvanMatejcic/Zavrsni_RDMA" class="material-icons" id = "github-link1">open_in_new</a>
+                </div>
+            </div>
+        </div>
+        <div class = "projects animated animatedFadeInUp fadeInUp">
+            <div id = "project-image">
+                <img id = "project-image2" src = "img/muzej_kukaca_1.png">
+            </div>
+            <div class = "project-text-wrapper">
+                <h2 id = "project-heading">Insect Museum</h2>
+                <p id = "project-description">
+                    This is a virtual insect museum made with the intent to allow users to view our gallery of exotic insects.<br>
+                    Users who create an account can also edit, delete or add their own insects into the gallary.<br></p>
+                <p id = "project-description-smaller">This project was made with Django (python), HTML & CSS.</p><br>
+                <p id = "release-date">Release date: December 7, 2021.</p>
+                <div>
+                    <a href = "https://github.com/IvanMatejcic/muzej_kukaca" class="material-icons" id = "github-link1">open_in_new</a>
+                </div>
+            </div>
+        </div>
+        <div class = "projects animated animatedFadeInUp fadeInUp">
+            <div id = "project-image">
+                <img id = "project-image2" src = "img/stopwatch-app.png">
+            </div>
+            <div class = "project-text-wrapper">
+                <h2 id = "project-heading">Stopwatch App</h2>
+                <p id = "project-description">
+                    Basic stopwatch app.<br>
+                    All stopwatch functionalities; start, stop & reset triggers.<br></p>
+                <p id = "project-description-smaller">This project was made with JavaScript, HTML & CSS.</p><br>
+                <p id = "release-date">Release date: September 23, 2021.</p>
+                <div>
+                    <a href = "https://github.com/IvanMatejcic/Stoperica_app" class="material-icons" id = "github-link2">open_in_new</a>
+                </div>
+            </div>
+        </div>
+        <div class = "projects animated animatedFadeInUp fadeInUp">
+            <div id = "project-image">
+                <img id = "project-image2" src = "img/Gym_Admin_App.png">
+            </div>
+            <div class = "project-text-wrapper">
+                <h2 id = "project-heading">Gym Admin App</h2>
+                <p id = "project-description">
+                    Console application simulating a gym management system.<br>
+                    User can add, delete gym members, edit their info aswell as manage their subscription; view subscription details or renew it.</p>
+                <p id = "project-description-smaller">This project was made with C++.</p><br>
+                <p id = "release-date">Release date: February 9, 2021.</p>
+                <div>
+                    <a href = "https://github.com/IvanMatejcic/Gym_app" class="material-icons" id = "github-link3">open_in_new</a> 
+                </div>
+            </div>
+        </div>
+        <div class = "projects animated animatedFadeInUp fadeInUp">
+            <div id = "project-image">
+                <img id = "project-image2" src = "img/android_app.png">
+            </div>
+            <div class = "project-text-wrapper">
+                <h2 id = "project-heading">Android Sensor App</h2>
+                <p id = "project-description">
+                    Android app which uses the device's accelerometer to determine its precise location.<br>
+                    An emulator aswell as a physical device was used in the process of testing this application.<br></p>
+                <p id = "project-description-smaller">This project was made with TypeScript, JavaScript & CSS.</p><br>
+                <p id = "release-date">Release date: April 2, 2022.</p>
+                <div>
+                    <a href = "https://github.com/IvanMatejcic/SensorApp" class="material-icons" id = "github-link4">open_in_new</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer style = "background-color: #111;">
+        <div class = "social">
+            <a href = "https://twitter.com/__yessirskiii__" class = "fa fa-twitter"></a>
+            <a href = "https://www.linkedin.com/in/ivan-matej%C4%8Di%C4%87-066b1175/" class = "fa fa-linkedin"></a>
+            <a href = "https://www.instagram.com/ivanmatejcic_/" class = "fa fa-instagram"></a>
+        </div>
+        <p style = "background-color: #111; color: white;margin:  0 auto;padding:  30px;text-align: center;align-items: center; font-size: 15px;">@2022 Ivan Matejčić</p>
+    </footer> 
+</body>
+</html>
