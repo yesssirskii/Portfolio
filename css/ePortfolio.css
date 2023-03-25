@@ -62,6 +62,7 @@ a:hover{
 
 .navbar-effect{
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .navbar-effect:hover{
