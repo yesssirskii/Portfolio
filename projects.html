@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href = "css/ePortfolio.css">
     <script src = "js/ePortfolio.js"></script>
+    <script src = "https://cdn.lordicon.com/ritcuqlt.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,9 +27,46 @@
         <div class = "right-side">
             <nav class = "navbar">
                 <ul id = "navbar-list">
-                    <li class = "navbar-effect"><a href = "index.html">Home</a></li>
-                    <li class = "navbar-effect"><a class = "active" href = "projects.html">My Projects</a></li>
-                    <li class = "navbar-effect"><a href = "Ivan Matejčić_CV.docx">CV</a></li>
+                    <li class = "navbar-effect">
+                        <a href = "index.html">
+                            <abbr title = "About me">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/bhfjfgqz.json"
+                                    trigger="loop"
+                                    delay="1000"
+                                    colors="primary:#ffffff"
+                                    style="width:35px;height:35px"
+                                    >
+                                </lord-icon>
+                            </abbr>
+                        </a>
+                    </li>
+                    <li class = "navbar-effect">
+                        <a class = "active" href = "projects.html">
+                            <abbr title = "Take a look at some of my projects!">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/fpmskzsv.json"
+                                    trigger="loop"
+                                    delay="1000"
+                                    colors="primary:#ffffff"
+                                    style="width:35px;height:35px">
+                                </lord-icon>
+                            </abbr>
+                        </a>
+                    </li>
+                    <li class = "navbar-effect">
+                        <a onClick = "openCV()">
+                            <abbr title = "See my CV!">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/iiixgoqp.json"
+                                    trigger="loop"
+                                    delay="2000"
+                                    colors="primary:#ffffff"
+                                    style="width:35px;height:35px">
+                                </lord-icon>
+                            </abbr>
+                        </a>
+                    </li>
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class = "fa fa-bars"></i>

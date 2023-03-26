@@ -1,5 +1,8 @@
-/*HAMBURGER*/
+//HAMBURGER
 
+/**
+ * Hamburger activation.
+ */
 function myFunction() {
   var x = document.getElementById("navbar-list");
   
@@ -10,7 +13,7 @@ function myFunction() {
   }
 }
 
-/*SLIDES*/
+//SLIDES
 
 /**
  * Function which creates and meneges the HTML carousel.
@@ -60,4 +63,22 @@ function openCV() {
   link.target = "_blank";
   link.click();
 }
+
+var navbar = document.getElementById("navbar-list");
+var hamburgerActivator = window.matchMedia("(max-width: 600px)");
+
+/**
+ * Function which fixes hamburger appearing in hamburger state while not in it.
+ */
+function hamburgerActivation(){
+  if (hamburgerActivator.matches){
+    navbar.style.display = "block";
+  }
+  else{
+    navbar.style.display = "none";
+  }
+}
+
+hamburgerActivation(hamburgerActivator);
+hamburgerActivator.addEventListener(hamburgerActivation);
 
