@@ -16,7 +16,7 @@ function myFunction() {
 //SLIDES
 
 /**
- * Function which creates and meneges the HTML carousel.
+ * Function which creates and manages the HTML carousel.
  * @param {*} n 
  */
 function showSlides(n) {
@@ -59,7 +59,7 @@ function currentSlide(n) {
  */
 function openCV() {
   let link = document.createElement("a");
-  link.href = "Ivan Matejčić_CV.pdf";
+  link.href = "cv.pdf";
   link.target = "_blank";
   link.click();
 }

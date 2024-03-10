@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Matejčić - Projects</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href = "css/ePortfolio.css">
-    <script src = "js/ePortfolio.js"></script>
+    <link rel="stylesheet" href = "css/index.css">
+    <script src = "js/index.js"></script>
     <script src = "https://cdn.lordicon.com/ritcuqlt.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,40 +29,54 @@
                 <ul id = "navbar-list">
                     <li class = "navbar-effect">
                         <a href = "index.html">
+                            About me
                             <abbr title = "About me">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/bhfjfgqz.json"
                                     trigger="loop"
                                     delay="1000"
                                     colors="primary:#ffffff"
-                                    style="width:35px;height:35px"
-                                    >
+                                    style="
+                                        width:35px;
+                                        height:35px;
+                                        display: flex;
+                                        justify-content: center;">
                                 </lord-icon>
                             </abbr>
                         </a>
                     </li>
                     <li class = "navbar-effect">
                         <a class = "active" href = "projects.html">
+                            Projects
                             <abbr title = "Take a look at some of my projects!">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/fpmskzsv.json"
                                     trigger="loop"
                                     delay="1000"
                                     colors="primary:#ffffff"
-                                    style="width:35px;height:35px">
+                                    style="
+                                        width:35px;
+                                        height:35px;
+                                        display: flex;
+                                        justify-content: center;">
                                 </lord-icon>
                             </abbr>
                         </a>
                     </li>
                     <li class = "navbar-effect">
-                        <a onClick = "openCV()">
+                        <a onclick="openCV()">
+                            CV
                             <abbr title = "See my CV!">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/iiixgoqp.json"
                                     trigger="loop"
                                     delay="2000"
                                     colors="primary:#ffffff"
-                                    style="width:35px;height:35px">
+                                    style="
+                                        width:35px;
+                                        height:35px;
+                                        display: flex;
+                                        justify-content: center;">
                                 </lord-icon>
                             </abbr>
                         </a>
@@ -183,7 +197,7 @@
             <a href = "https://www.linkedin.com/in/ivan-matej%C4%8Di%C4%87-066b1175/" class = "fa fa-linkedin"></a>
             <a href = "https://www.instagram.com/ivanmatejcic_/" class = "fa fa-instagram"></a>
         </div>
-        <p style = "background-color: #111; color: white;margin:  0 auto;padding:  30px;text-align: center;align-items: center; font-size: 15px;">@2023 Ivan Matejčić</p>
+        <p style = "background-color: #111; color: white;margin:  0 auto;padding:  30px;text-align: center;align-items: center; font-size: 15px;">@<script>document.write(new Date().getFullYear());</script> Ivan Matejčić</p>
     </footer> 
 </body>
 </html>
